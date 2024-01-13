@@ -1,23 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(184, 183, 181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    
 }
 
 .form-contact {
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(249, 249, 249);
+    border-radius: 20px;
 }
 
 .form-contact header {
     text-align: center;
     margin-bottom: 20px;
+    
 }
 
 .form-contact form {
     display: flex;
     flex-direction: column;
+    
 }
 
 .form-contact label {
@@ -30,6 +43,7 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .form-contact input[type="submit"] {
@@ -40,6 +54,7 @@ body {
     background-color: #007BFF;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .form-contact input[type="submit"]:hover {
@@ -49,4 +64,10 @@ body {
 #errores {
     color: red;
     margin-top: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+    text-align: center;
 }
