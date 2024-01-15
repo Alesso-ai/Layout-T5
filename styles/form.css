@@ -28,7 +28,7 @@ body {
 .form-contact img {
     display: block;
     margin: 0 auto; 
-    max-width: 100%; 
+    max-width: 40%; 
     height: auto; 
     border-radius: 20px;
 }
