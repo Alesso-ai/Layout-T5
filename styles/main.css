@@ -2,6 +2,7 @@
 
 body {
     font-family: Kanit, sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -23,35 +24,32 @@ body {
   :root {
     --h1-font-size: 1.5rem;
     --span-font-size: 1.75rem;
-    --input-size: 10.8rem;
-    
+    --input-size: 100%;
   }
 }
- 
-*, ::after, ::before{
+
+*, ::after, ::before {
     box-sizing: border-box;
     font-family: Roboto Condensed, sans-serif;
 }
 
-.hero-container{
+.hero-container {
   background: url(/assets/imgs/Cronen\ Miniatura.png) center/cover;
-  /*Aqui para cortar la magen*/
   height: 80vh;
-  /*--------------------------*/
   position: relative;
-  clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
 }
 
-.hero-container::before{
+.hero-container::before {
   content: "";
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0.7;
 }
 
-.hero-body{
+.hero-body {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -60,46 +58,54 @@ body {
   height: 100%;
 }
 
-body{
+h1 {
   margin: 0;
-}
-
-h1{
-  margin: 0;
-  color:var(--h1-color);
+  color: var(--h1-color);
   font-size: var(--h1-font-size);
 }
 
-span{
-  color:var(--span-color);
+h3{
+  margin: 0;
+  color: var(--oscuro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+span {
+  color: var(--span-color);
   font-size: var(--span-font-size);
 }
 
-.form{
+.form {
   display: flex;
 }
 
-input{
+input {
   width: var(--input-size);
   border-radius: 4px 0px 0px 4px;
   padding: 15px;
   border: 0;
 }
 
-button{
+button {
   padding: 14px;
   border-radius: 0 4px 4px 0;
-  border:0;
+  border: 0;
   cursor: pointer;
 }
 
-button:hover{
-  background:rgb(38,101,167) ;
+button:hover {
+  background: rgb(38, 101, 167);
   color: var(--button-color);
-
 }
 
-.logo{
+.logo {
   width: 50px;
   height: 50px;
   border-radius: 25%;
@@ -111,45 +117,39 @@ button:hover{
 }
 
 .nav-links {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-    width: 100%;
-    height: 100%;
-    margin: 20px 20px 20px 0; /* Espacio arriba, abajo y margen derecho aumentado */
-    padding: 10px;
-    gap: 50px; /* Espacio entre elementos */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  margin: 20px 20px 20px 0;
+  padding: 10px;
+  gap: 20px;
 }
 
 .nav-links li {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #333; /* Color del texto */
-    font-weight: bold;
-    font-size: 18px; /* Tamaño de texto más grande */
-    transition: color 0.3s; /* Transición suave para el cambio de color al pasar el ratón */
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #007BFF; /* Color del texto al pasar el ratón */
-}
-
-.footer{
-  background-color: var(--oscuro);
-  color: var(--blanco);
-  text-align: center;
-  padding: 3rem;
+  color: #007BFF;
 }
 
 .card-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin: 20px; /* Ajusta según sea necesario */
+  margin: 20px;
 }
 
 .card {
@@ -157,9 +157,10 @@ button:hover{
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px; /* Ajusta según sea necesario */
+  width: 300px;
   text-align: center;
-  margin-bottom: 20px; /* Espacio entre las cards */
+  margin-bottom: 20px; /* Ajusta el margen inferior entre las tarjetas */
+  flex: 1;
 }
 
 .card h2 {
@@ -168,4 +169,58 @@ button:hover{
 
 .card p {
   color: var(--oscuro);
+}
+
+.footer {
+  background-color: var(--oscuro);
+  color: var(--blanco);
+  text-align: center;
+  padding: 3rem;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.icon {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.icon:hover {
+  color: #007BFF;
+}
+
+.card-wallpaper {
+  text-align: center;
+  background-color: var(--oscuro);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px; 
+}
+
+.card-wallpaper h3 {
+  color: var(--blanco);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.card-wallpaper img {
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 8px; 
+}
+
+.card-wallpaper p {
+  color: var(--blanco);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: var(--oscuro);
 }
