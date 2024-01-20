@@ -11,6 +11,12 @@ body {
   --h1-color: #ffffff ;
   --span-color:  #ffffff;
   --button-color: #ffffff;
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #ffc107;
+  --secundario: #0097a7;
+  --gris: #757575;
+  --grisClaro: #dfe9f3;
 }
 
 @media screen and (max-width: 450px) {
@@ -71,7 +77,6 @@ span{
 
 .form{
   display: flex;
- 
 }
 
 input{
@@ -86,7 +91,6 @@ button{
   border-radius: 0 4px 4px 0;
   border:0;
   cursor: pointer;
-
 }
 
 button:hover{
@@ -133,4 +137,35 @@ button:hover{
 
 .nav-links a:hover {
     color: #007BFF; /* Color del texto al pasar el ratón */
+}
+
+.footer{
+  background-color: var(--oscuro);
+  color: var(--blanco);
+  text-align: center;
+  padding: 3rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px; /* Ajusta según sea necesario */
+}
+
+.card {
+  background-color: var(--grisClaro);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Ajusta según sea necesario */
+  text-align: center;
+  margin-bottom: 20px; /* Espacio entre las cards */
+}
+
+.card h2 {
+  color: var(--secundario);
+}
+
+.card p {
+  color: var(--oscuro);
 }
