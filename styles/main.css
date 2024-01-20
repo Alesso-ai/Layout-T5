@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
 
 body {
-    font-family: Kanit, sans-serif;
-    margin: 0;
+  font-family: Kanit, sans-serif;
+  margin: 0;
 }
 
 :root {
   --h1-font-size: 6rem;
   --span-font-size: 3.5rem;
   --input-size: 20.75rem;
-  --h1-color: #ffffff ;
-  --span-color:  #ffffff;
+  --h1-color: #ffffff;
+  --span-color: #ffffff;
   --button-color: #ffffff;
   --blanco: #ffffff;
   --oscuro: #212121;
@@ -28,9 +28,11 @@ body {
   }
 }
 
-*, ::after, ::before {
-    box-sizing: border-box;
-    font-family: Roboto Condensed, sans-serif;
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  font-family: Roboto Condensed, sans-serif;
 }
 
 .hero-container {
@@ -64,7 +66,7 @@ h1 {
   font-size: var(--h1-font-size);
 }
 
-h3{
+h3 {
   margin: 0;
   color: var(--oscuro);
   display: flex;
@@ -74,7 +76,6 @@ h3{
   font-weight: 400;
   margin-bottom: 20px;
   margin-top: 20px;
-
 }
 
 span {
@@ -142,7 +143,7 @@ button:hover {
 }
 
 .nav-links a:hover {
-  color: #007BFF;
+  color: #007bff;
 }
 
 .card-container {
@@ -159,7 +160,7 @@ button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 300px;
   text-align: center;
-  margin-bottom: 20px; /* Ajusta el margen inferior entre las tarjetas */
+  margin-bottom: 20px;
   flex: 1;
 }
 
@@ -169,6 +170,20 @@ button:hover {
 
 .card p {
   color: var(--oscuro);
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.card-wallpaper p {
+  color: var(--blanco);
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-top: 10px;
 }
 
 .footer {
@@ -190,7 +205,7 @@ button:hover {
 }
 
 .icon:hover {
-  color: #007BFF;
+  color: #007bff;
 }
 
 .card-wallpaper {
@@ -199,7 +214,7 @@ button:hover {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px; 
+  margin: 20px;
 }
 
 .card-wallpaper h3 {
@@ -213,14 +228,72 @@ button:hover {
 .card-wallpaper img {
   max-width: 100%;
   margin-top: 20px;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
-.card-wallpaper p {
+.card-wallpaper a {
   color: var(--blanco);
-  font-size: 2.5rem;
-  font-weight: 400;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  background-color: var(--oscuro);
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+
+
+.footer {
+  background-color: #121212; /* Cambia el color de fondo oscuro según tu preferencia */
+  color: #bdbdbd; /* Cambia el color del texto según tu preferencia */
+  text-align: center;
+  padding: 3rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.footer-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-item {
+  flex: 1;
+  text-align: left;
+  max-width: 300px; /* Ajusta el ancho máximo de cada columna según tu preferencia */
+}
+
+.footer-item h3 {
+  color: #bdbdbd; /* Cambia el color del encabezado según tu preferencia */
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-item li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-item a {
+  color: #bdbdbd; /* Cambia el color de los enlaces según tu preferencia */
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+
+.footer-item a:hover {
+  color: #007bff;
 }
