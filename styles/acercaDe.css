@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+
 body {
-    font-family: Kanit, sans-serif;
+  font-family: Kanit, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -17,7 +18,7 @@ body {
 }
 
 .hero p {
-  color: #000000; 
+  color: #000000;
   font-size: 2.5rem;
 }
 
@@ -35,7 +36,7 @@ p {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 20px auto; 
+  margin: 20px auto;
 }
 
 h2 {
@@ -60,6 +61,10 @@ li {
 }
 
 @media screen and (max-width: 600px) {
+  .hero p {
+    font-size: 1.5rem;
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -72,6 +77,7 @@ li {
 
   p {
     font-size: 1rem;
+    margin-bottom: 15px;
   }
 }
 
@@ -79,11 +85,6 @@ li {
   display: inline-block;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.button {
-  display: inline-block;
-  margin-top: 20px;
 }
 
 .btn {
@@ -101,7 +102,6 @@ li {
   background-color: #0056b3;
   color: #ffffff;
 }
-
 
 .btn:focus {
   outline: none;
