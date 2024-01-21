@@ -247,53 +247,56 @@ button:hover {
 
 
 
-.footer {
-  background-color: #121212; /* Cambia el color de fondo oscuro según tu preferencia */
-  color: #bdbdbd; /* Cambia el color del texto según tu preferencia */
-  text-align: center;
-  padding: 3rem;
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
 }
 
 .footer-container {
   display: flex;
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.footer-body {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.footer-item {
+.footer-section {
   flex: 1;
   text-align: left;
-  max-width: 300px; /* Ajusta el ancho máximo de cada columna según tu preferencia */
+  margin-right: 20px;
 }
 
-.footer-item h3 {
-  color: #bdbdbd; /* Cambia el color del encabezado según tu preferencia */
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+.footer-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-.footer-item ul {
+.footer-section ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-item li {
-  margin-bottom: 0.5rem;
+.footer-section li {
+  margin-bottom: 8px;
 }
 
-.footer-item a {
-  color: #bdbdbd; /* Cambia el color de los enlaces según tu preferencia */
+.footer-section a {
   text-decoration: none;
-  font-size: 1.6rem;
-  transition: color 0.3s;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
-.footer-item a:hover {
-  color: #007bff;
+.footer-section a i {
+  margin-right: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 1rem;
 }
