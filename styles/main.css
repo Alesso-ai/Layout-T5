@@ -177,13 +177,15 @@ button:hover {
   align-items: center;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: justify; 
 }
+
 .card-wallpaper p {
   color: var(--blanco);
   font-size: 1.6rem;
   line-height: 1.6;
   margin-top: 10px;
+  text-align: center; 
 }
 
 .footer {
