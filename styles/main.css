@@ -177,7 +177,7 @@ button:hover {
   align-items: center;
   display: flex;
   flex-direction: column;
-  text-align: justify; 
+  text-align: justify;
 }
 
 .card-wallpaper p {
@@ -185,7 +185,7 @@ button:hover {
   font-size: 1.6rem;
   line-height: 1.6;
   margin-top: 10px;
-  text-align: center; 
+  text-align: center;
 }
 
 .footer {
